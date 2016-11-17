@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HhS-sh-Lll">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="mnk-0l-thD">
+            <objects>
+                <navigationController id="HhS-sh-Lll" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F3j-SF-Icb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sbS-GY-DGj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rjk-Bu-byI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-761" y="-8"/>
+        </scene>
+        <!--Сделать заказ-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QWPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYL-XL-uTw">
+                                <rect key="frame" x="29" y="100" width="125" height="117"/>
+                                <state key="normal" image="pizza"/>
+                                <connections>
+                                    <action selector="addPizza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Kc-Se-4LD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="is0-aW-UK6">
+                                <rect key="frame" x="248" y="96" width="65" height="125"/>
+                                <state key="normal" image="red_bull"/>
+                                <connections>
+                                    <action selector="addRedBull:" destination="BYZ-38-t0r" eventType="touchUpInside" id="arh-gV-FAS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypr-kI-7O8">
+                                <rect key="frame" x="86" y="243" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1n-ha-4dX">
+                                <rect key="frame" x="275" y="243" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Комментарий" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P0B-4V-Tgr">
+                                <rect key="frame" x="37.5" y="289" width="300" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Телефон" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mjv-W3-c5L">
+                                <rect key="frame" x="37.5" y="339" width="300" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sL-BB-iJa">
+                                <rect key="frame" x="36" y="399" width="150" height="30"/>
+                                <state key="normal" title="Заказать"/>
+                                <connections>
+                                    <action selector="makeOrder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zcx-v4-KBy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26a-hK-kJW">
+                                <rect key="frame" x="189" y="399" width="150" height="30"/>
+                                <state key="normal" title="Проверить заказ"/>
+                                <connections>
+                                    <action selector="checkOrder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CZG-DH-3gs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UYL-XL-uTw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="17k-Ow-Ugn"/>
+                            <constraint firstItem="6sL-BB-iJa" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="1S5-Jc-NhL"/>
+                            <constraint firstItem="26a-hK-kJW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="2Ee-iC-LKL"/>
+                            <constraint firstItem="6sL-BB-iJa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="6cK-QR-Iod"/>
+                            <constraint firstItem="P0B-4V-Tgr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9QL-aE-RYq"/>
+                            <constraint firstItem="UYL-XL-uTw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-96" id="9XX-cC-45V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="is0-aW-UK6" secondAttribute="trailing" constant="46" id="9jo-zP-Yh0"/>
+                            <constraint firstItem="Ypr-kI-7O8" firstAttribute="top" secondItem="UYL-XL-uTw" secondAttribute="bottom" constant="26" id="B31-g6-t1l"/>
+                            <constraint firstItem="UYL-XL-uTw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="Eha-v3-yAK"/>
+                            <constraint firstItem="P0B-4V-Tgr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="G6T-xn-dP4"/>
+                            <constraint firstItem="Ypr-kI-7O8" firstAttribute="centerX" secondItem="UYL-XL-uTw" secondAttribute="centerX" id="GTD-Sh-oef"/>
+                            <constraint firstItem="P0B-4V-Tgr" firstAttribute="top" secondItem="Ypr-kI-7O8" secondAttribute="bottom" constant="25" id="INg-pA-1qW"/>
+                            <constraint firstItem="is0-aW-UK6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="93" id="J8E-MW-koE"/>
+                            <constraint firstItem="Mjv-W3-c5L" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="JtA-iT-XfH"/>
+                            <constraint firstItem="Mjv-W3-c5L" firstAttribute="top" secondItem="P0B-4V-Tgr" secondAttribute="bottom" constant="20" id="NrB-jn-GdJ"/>
+                            <constraint firstItem="is0-aW-UK6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="Xaf-fq-dBg"/>
+                            <constraint firstItem="G1n-ha-4dX" firstAttribute="centerX" secondItem="is0-aW-UK6" secondAttribute="centerX" id="Yzk-kv-ckh"/>
+                            <constraint firstItem="G1n-ha-4dX" firstAttribute="top" secondItem="is0-aW-UK6" secondAttribute="bottom" constant="22" id="cq0-Rh-CEu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="26a-hK-kJW" secondAttribute="trailing" constant="20" id="etj-oO-SLd"/>
+                            <constraint firstItem="6sL-BB-iJa" firstAttribute="top" secondItem="Mjv-W3-c5L" secondAttribute="bottom" constant="30" id="nMR-B1-b1Q"/>
+                            <constraint firstItem="26a-hK-kJW" firstAttribute="top" secondItem="6sL-BB-iJa" secondAttribute="top" id="o02-q9-q8P"/>
+                            <constraint firstItem="Mjv-W3-c5L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sfU-hR-gwg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Сделать заказ" id="CPZ-WT-17W"/>
+                    <connections>
+                        <outlet property="commentField" destination="P0B-4V-Tgr" id="kl1-PO-r6t"/>
+                        <outlet property="phoneField" destination="Mjv-W3-c5L" id="x69-IF-Om3"/>
+                        <outlet property="pizzaCountLabel" destination="Ypr-kI-7O8" id="mNN-lg-lCf"/>
+                        <outlet property="redBullCountLabel" destination="G1n-ha-4dX" id="d5u-iC-zTV"/>
+                        <segue destination="l4L-HQ-buQ" kind="show" identifier="status" id="R4h-xz-pgk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164" y="53"/>
+        </scene>
+        <!--Статус-->
+        <scene sceneID="KBI-uq-5Qk">
+            <objects>
+                <viewController id="l4L-HQ-buQ" customClass="StatusViewController" customModule="QWPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PHh-uC-pm4"/>
+                        <viewControllerLayoutGuide type="bottom" id="MzW-Eo-CqN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JLm-iS-ffz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="status_ok" translatesAutoresizingMaskIntoConstraints="NO" id="vFz-pK-Mxm">
+                                <rect key="frame" x="125" y="89" width="125" height="125"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMH-ZQ-VIF">
+                                <rect key="frame" x="37.5" y="319" width="300" height="30"/>
+                                <state key="normal" title="Оплатить"/>
+                                <connections>
+                                    <action selector="pay:" destination="l4L-HQ-buQ" eventType="touchUpInside" id="4vq-YL-wZJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 ₽" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwb-MO-f0m">
+                                <rect key="frame" x="174.5" y="268" width="25.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vFz-pK-Mxm" firstAttribute="top" secondItem="PHh-uC-pm4" secondAttribute="bottom" constant="25" id="5fB-aR-9Bt"/>
+                            <constraint firstItem="bMH-ZQ-VIF" firstAttribute="centerX" secondItem="JLm-iS-ffz" secondAttribute="centerX" id="HIM-eZ-P38"/>
+                            <constraint firstItem="bMH-ZQ-VIF" firstAttribute="top" secondItem="Nwb-MO-f0m" secondAttribute="bottom" constant="30" id="JCf-22-CVP"/>
+                            <constraint firstItem="vFz-pK-Mxm" firstAttribute="centerX" secondItem="JLm-iS-ffz" secondAttribute="centerX" id="dqj-II-4Ha"/>
+                            <constraint firstItem="Nwb-MO-f0m" firstAttribute="centerX" secondItem="JLm-iS-ffz" secondAttribute="centerX" id="oZ2-5C-Db9"/>
+                            <constraint firstItem="bMH-ZQ-VIF" firstAttribute="width" secondItem="JLm-iS-ffz" secondAttribute="width" multiplier="0.8" id="tdD-n9-uWa"/>
+                            <constraint firstItem="Nwb-MO-f0m" firstAttribute="top" secondItem="vFz-pK-Mxm" secondAttribute="bottom" constant="54" id="vA4-04-yrN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Статус" id="KaN-cL-wvs"/>
+                    <connections>
+                        <outlet property="payButton" destination="bMH-ZQ-VIF" id="KYr-6d-w04"/>
+                        <outlet property="statusImageView" destination="vFz-pK-Mxm" id="Bsc-6W-9dz"/>
+                        <outlet property="sumLabel" destination="Nwb-MO-f0m" id="RkC-eI-KaR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nb8-3F-aYr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="53"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pizza" width="125" height="117"/>
+        <image name="red_bull" width="65" height="125"/>
+        <image name="status_ok" width="125" height="125"/>
+    </resources>
+</document>

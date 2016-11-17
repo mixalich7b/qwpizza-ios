@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		258045E646B0C05D3BB4B2F6 /* Pods_QWPizza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12F93335F34C8FFE02A2716 /* Pods_QWPizza.framework */; };
+		B26DBAD01DDCF7EC0088DA2A /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26DBACF1DDCF7EC0088DA2A /* StatusViewController.swift */; };
+		B2F8A32D1DDB964000A667F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F8A32C1DDB964000A667F5 /* AppDelegate.swift */; };
+		B2F8A32F1DDB964000A667F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F8A32E1DDB964000A667F5 /* ViewController.swift */; };
+		B2F8A3321DDB964000A667F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F8A3301DDB964000A667F5 /* Main.storyboard */; };
+		B2F8A3341DDB964000A667F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F8A3331DDB964000A667F5 /* Assets.xcassets */; };
+		B2F8A3371DDB964000A667F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F8A3351DDB964000A667F5 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A12F93335F34C8FFE02A2716 /* Pods_QWPizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QWPizza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26DBACF1DDCF7EC0088DA2A /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		B2F8A3291DDB964000A667F5 /* QWPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QWPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F8A32C1DDB964000A667F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2F8A32E1DDB964000A667F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2F8A3311DDB964000A667F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2F8A3331DDB964000A667F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2F8A3361DDB964000A667F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2F8A3381DDB964000A667F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E94025F27A68B90A108F58 /* Pods-QWPizza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QWPizza.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QWPizza/Pods-QWPizza.debug.xcconfig"; sourceTree = "<group>"; };
+		DA3F611E380E2227BB4D7E5D /* Pods-QWPizza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QWPizza.release.xcconfig"; path = "Pods/Target Support Files/Pods-QWPizza/Pods-QWPizza.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2F8A3261DDB964000A667F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				258045E646B0C05D3BB4B2F6 /* Pods_QWPizza.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7274E261269FFB5A188B797C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A12F93335F34C8FFE02A2716 /* Pods_QWPizza.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2F8A3201DDB963F00A667F5 = {
+			isa = PBXGroup;
+			children = (
+				B2F8A32B1DDB964000A667F5 /* QWPizza */,
+				B2F8A32A1DDB964000A667F5 /* Products */,
+				E67F9D2693D3E242BD34217F /* Pods */,
+				7274E261269FFB5A188B797C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B2F8A32A1DDB964000A667F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2F8A3291DDB964000A667F5 /* QWPizza.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2F8A32B1DDB964000A667F5 /* QWPizza */ = {
+			isa = PBXGroup;
+			children = (
+				B2F8A32C1DDB964000A667F5 /* AppDelegate.swift */,
+				B2F8A32E1DDB964000A667F5 /* ViewController.swift */,
+				B26DBACF1DDCF7EC0088DA2A /* StatusViewController.swift */,
+				B2F8A3301DDB964000A667F5 /* Main.storyboard */,
+				B2F8A3331DDB964000A667F5 /* Assets.xcassets */,
+				B2F8A3351DDB964000A667F5 /* LaunchScreen.storyboard */,
+				B2F8A3381DDB964000A667F5 /* Info.plist */,
+			);
+			path = QWPizza;
+			sourceTree = "<group>";
+		};
+		E67F9D2693D3E242BD34217F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6E94025F27A68B90A108F58 /* Pods-QWPizza.debug.xcconfig */,
+				DA3F611E380E2227BB4D7E5D /* Pods-QWPizza.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2F8A3281DDB964000A667F5 /* QWPizza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2F8A33B1DDB964000A667F5 /* Build configuration list for PBXNativeTarget "QWPizza" */;
+			buildPhases = (
+				6051241C251DE03145E6BEA6 /* [CP] Check Pods Manifest.lock */,
+				B2F8A3251DDB964000A667F5 /* Sources */,
+				B2F8A3261DDB964000A667F5 /* Frameworks */,
+				B2F8A3271DDB964000A667F5 /* Resources */,
+				0E803C945329A285342FBB41 /* [CP] Embed Pods Frameworks */,
+				087C5BDBA60E73885B7F7AAB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QWPizza;
+			productName = QWPizza;
+			productReference = B2F8A3291DDB964000A667F5 /* QWPizza.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2F8A3211DDB964000A667F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Qiwi;
+				TargetAttributes = {
+					B2F8A3281DDB964000A667F5 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B2F8A3241DDB964000A667F5 /* Build configuration list for PBXProject "QWPizza" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2F8A3201DDB963F00A667F5;
+			productRefGroup = B2F8A32A1DDB964000A667F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2F8A3281DDB964000A667F5 /* QWPizza */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2F8A3271DDB964000A667F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F8A3371DDB964000A667F5 /* LaunchScreen.storyboard in Resources */,
+				B2F8A3341DDB964000A667F5 /* Assets.xcassets in Resources */,
+				B2F8A3321DDB964000A667F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		087C5BDBA60E73885B7F7AAB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QWPizza/Pods-QWPizza-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0E803C945329A285342FBB41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QWPizza/Pods-QWPizza-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6051241C251DE03145E6BEA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2F8A3251DDB964000A667F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F8A32F1DDB964000A667F5 /* ViewController.swift in Sources */,
+				B26DBAD01DDCF7EC0088DA2A /* StatusViewController.swift in Sources */,
+				B2F8A32D1DDB964000A667F5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B2F8A3301DDB964000A667F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2F8A3311DDB964000A667F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2F8A3351DDB964000A667F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2F8A3361DDB964000A667F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2F8A3391DDB964000A667F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2F8A33A1DDB964000A667F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2F8A33C1DDB964000A667F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6E94025F27A68B90A108F58 /* Pods-QWPizza.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QWPizza/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.qiwi.QWPizza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B2F8A33D1DDB964000A667F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA3F611E380E2227BB4D7E5D /* Pods-QWPizza.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QWPizza/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.qiwi.QWPizza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2F8A3241DDB964000A667F5 /* Build configuration list for PBXProject "QWPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2F8A3391DDB964000A667F5 /* Debug */,
+				B2F8A33A1DDB964000A667F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2F8A33B1DDB964000A667F5 /* Build configuration list for PBXNativeTarget "QWPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2F8A33C1DDB964000A667F5 /* Debug */,
+				B2F8A33D1DDB964000A667F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2F8A3211DDB964000A667F5 /* Project object */;
+}
