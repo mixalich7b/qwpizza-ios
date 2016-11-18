@@ -63,7 +63,7 @@ class StatusViewController: UIViewController {
     }
     
     func checkOrder(_ sender: Any) {
-        Alamofire.request("http://localhost/status", method: .post, encoding: JSONEncoding.default, headers: ["Authorization": phone])
+        Alamofire.request("https://qwpizza.herokuapp.com/status", method: .get, headers: ["Authorization": phone])
             .validate()
             .log()
             .responseJSON {[weak self] response in
@@ -76,7 +76,9 @@ class StatusViewController: UIViewController {
                         self?.status = PaymentStatus(rawValue: json["status"] as! String)
                     }
                     break
-                default: break
+                case .failure(let error):
+                    print(error)
+                    break
                 }
         }
     }

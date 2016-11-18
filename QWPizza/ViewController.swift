@@ -54,23 +54,25 @@ class ViewController: UIViewController {
     }
     
     @IBAction func makeOrder(_ sender: Any) {
-        Alamofire.request("http://localhost/order", method: .post, parameters: ["products": order, "comment": commentField.text!], encoding: JSONEncoding.default, headers: ["Authorization": phoneField.text!])
+        Alamofire.request("https://qwpizza.herokuapp.com/order", method: .post, parameters: ["products": order, "comment": commentField.text!], encoding: JSONEncoding.default, headers: ["Authorization": phoneField.text!])
             .validate()
             .log()
             .responseJSON { response in
                 switch response.result {
                 case .success(let value):
                     let json = value as! [String: Any]
-                    let checkoutURL = "https://w.qiwi.com/order/external/main.action?shop=\(json["shopId"])&transaction=\(json["billId"])&successUrl=qwpizza://success&failUrl=qwpizza://fail"
+                    let checkoutURL = "https://w.qiwi.com/order/external/main.action?shop=\(json["shopId"]!)&transaction=\(json["billId"]!)&successUrl=qwpizza://success&failUrl=qwpizza://fail"
                     UIApplication.shared.open(URL(string: checkoutURL)!)
+                    break
                 case .failure(let error):
                     print(error)
+                    break
                 }
         }
     }
     
     @IBAction func checkOrder(_ sender: Any) {
-        Alamofire.request("http://localhost/status", method: .post, encoding: JSONEncoding.default, headers: ["Authorization": phoneField.text!])
+        Alamofire.request("https://qwpizza.herokuapp.com/status", method: .get, headers: ["Authorization": phoneField.text!])
             .validate()
             .log()
             .responseJSON {[weak self] response in
@@ -78,8 +80,8 @@ class ViewController: UIViewController {
                 case .success(let value):
                     self?.performSegue(withIdentifier: "status", sender: value)
                     break
-                default:
-                    self?.performSegue(withIdentifier: "status", sender: ["shopId": "123", "billId": "1235", "status": "waiting", "amount": "100500"])
+                case .failure(let error):
+                    print(error)
                     break
                 }
         }
