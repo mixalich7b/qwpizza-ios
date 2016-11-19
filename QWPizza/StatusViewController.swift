@@ -58,8 +58,7 @@ class StatusViewController: UIViewController {
     }
     
     @IBAction func pay(_ sender: Any) {
-        let checkoutURL = "https://w.qiwi.com/order/external/main.action?shop=\(shopId!)&transaction=\(billId!)&successUrl=qwpizza://success&failUrl=qwpizza://fail"
-        UIApplication.shared.open(URL(string: checkoutURL)!)
+        UIApplication.shared.open(URL(string: paymentUrlWith(shopId: shopId!, billId: billId!))!)
     }
     
     func checkOrder(_ sender: Any) {

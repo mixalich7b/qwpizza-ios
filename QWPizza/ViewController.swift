@@ -61,8 +61,7 @@ class ViewController: UIViewController {
                 switch response.result {
                 case .success(let value):
                     let json = value as! [String: Any]
-                    let checkoutURL = "https://w.qiwi.com/order/external/main.action?shop=\(json["shopId"]!)&transaction=\(json["billId"]!)&successUrl=qwpizza://success&failUrl=qwpizza://fail"
-                    UIApplication.shared.open(URL(string: checkoutURL)!)
+                    UIApplication.shared.open(URL(string: paymentUrlWith(shopId: json["shopId"] as! String, billId: json["billId"] as! String))!)
                     break
                 case .failure(let error):
                     print(error)

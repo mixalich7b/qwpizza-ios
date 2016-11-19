@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		258045E646B0C05D3BB4B2F6 /* Pods_QWPizza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12F93335F34C8FFE02A2716 /* Pods_QWPizza.framework */; };
 		B26DBAD01DDCF7EC0088DA2A /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26DBACF1DDCF7EC0088DA2A /* StatusViewController.swift */; };
+		B2EBF0D51DDFCEDF003DAA17 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EBF0D41DDFCEDF003DAA17 /* Utils.swift */; };
 		B2F8A32D1DDB964000A667F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F8A32C1DDB964000A667F5 /* AppDelegate.swift */; };
 		B2F8A32F1DDB964000A667F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F8A32E1DDB964000A667F5 /* ViewController.swift */; };
 		B2F8A3321DDB964000A667F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F8A3301DDB964000A667F5 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		A12F93335F34C8FFE02A2716 /* Pods_QWPizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QWPizza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26DBACF1DDCF7EC0088DA2A /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		B2EBF0D41DDFCEDF003DAA17 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B2F8A3291DDB964000A667F5 /* QWPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QWPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F8A32C1DDB964000A667F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2F8A32E1DDB964000A667F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				B2F8A32C1DDB964000A667F5 /* AppDelegate.swift */,
+				B2EBF0D41DDFCEDF003DAA17 /* Utils.swift */,
 				B2F8A32E1DDB964000A667F5 /* ViewController.swift */,
 				B26DBACF1DDCF7EC0088DA2A /* StatusViewController.swift */,
 				B2F8A3301DDB964000A667F5 /* Main.storyboard */,
@@ -217,6 +220,7 @@
 				B2F8A32F1DDB964000A667F5 /* ViewController.swift in Sources */,
 				B26DBAD01DDCF7EC0088DA2A /* StatusViewController.swift in Sources */,
 				B2F8A32D1DDB964000A667F5 /* AppDelegate.swift in Sources */,
+				B2EBF0D51DDFCEDF003DAA17 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
